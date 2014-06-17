@@ -5,49 +5,59 @@
 int main ()  {
  
 int result[39];
-int scelta;
-int scelta2;
+int domanda1;
+int domanda2;
 
 printf ("Inizio Test\n\n");  
 
-printf("Quanto fa 2+2?:\n ");
-printf("1) 4\n ");
-printf("2) 6\n ");
-printf("3) 8\n\n ");
-scanf("%d", &scelta);
+printf("How many instances of a specific Alfresco susbsystem can a server have running at any time?\n ");
+printf("1) One\n ");
+printf("2) Two\n ");
+printf("3) No morethan\n ");
+printf("4) There is no restriction\n\n ");
+scanf("%d", &domanda1);
 
-switch(scelta){
+
+switch(domanda1){
         case  1: 
-			printf("4\n");
-			result[0]=1;
+//			printf("One\n");
+			result[0]=0;
         break; 
         case  2: 
-			printf("6\n");
+//			printf("Two\n");
             result[0]=0;
         break;
         case  3: 
-			printf("8\n"); 
+//			printf("No morethan\n"); 
             result[0]=0;
+        case  4: 
+//			printf("There is no restriction\n"); 
+            result[0]=1;
         break;
  }
 
-printf("Quanto fa 6*7?:\n ");
-printf("1) 46\n ");
-printf("2) 42\n ");
-printf("3) 43\n ");
-scanf("%d", &scelta2);
+printf("Alfresco Enterprise Edition is recommended for:\n ");
+printf("1) highly technical developers on\n ");
+printf("2) mission critical production environments \n ");
+printf("3) those wishing to explore new Alfresco features\n ");
+printf("4) small systems only with less than 100 users\n\n ");
+scanf("%d", &domanda2);
 
-switch(scelta2){
+switch(domanda2){
         case  1: 
-			printf("46\n");
+//			printf("highly technical developers on\n");
 			result[1]=0;
         break; 
         case  2: 
-			printf("42\n");
+//			printf("mission critical production environments\n");
             result[1]=1;
         break;
         case  3: 
-			printf("43\n"); 
+//		    printf("those wishing to explore new Alfresco features\n"); 
+            result[1]=0;
+        break;
+        case  4: 
+//			printf("small systems only with less than 100 users\n"); 
             result[1]=0;
         break;
  }
