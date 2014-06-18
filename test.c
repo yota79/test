@@ -63,8 +63,8 @@ switch(domanda2){
  }
  
      if ((result[0] == 1) && (result[1] == 1))
-        printf ("La risposta è corretta\n");
+        printf ("Le risposte sono corrette\n");
     else
-        printf ("La risposta è sbagliata\n");
+        printf ("Una delle 2 o tutte e 2 le risposte sono sbagliate!!\n");
  return 0; 
 }
